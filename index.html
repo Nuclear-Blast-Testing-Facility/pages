@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki - Pyrowh Corporation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff4500, #28b463, #1f618d);
+            color: white;
+        }
 
+        /* Top Bar */
+        .topbar {
+            background-color: #1f618d; /* Bold blue */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .topbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f7dc6f; /* Bright yellow */
+        }
+        .topbar .nav-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .topbar .nav-links a:hover {
+            color: #ff4500; /* Vibrant red-orange */
+        }
+
+        /* Main Content */
+        .content-container {
+            display: flex;
+            margin-top: 80px; /* Space for the fixed top bar */
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #28b463; /* Vibrant green */
+            padding: 20px;
+            width: 250px;
+            box-sizing: border-box;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            color: #f7dc6f; /* Bright yellow */
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .sidebar ul li a:hover {
+            color: #ff4500; /* Vibrant red-orange */
+        }
+        .collapsible {
+            background: none;
+            border: none;
+            color: #f7dc6f;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            width: 100%;
+            padding: 10px 0;
+            cursor: pointer;
+            outline: none;
+        }
+        .collapsible:after {
+            content: '\25BC';
+            font-size: 12px;
+            float: right;
+            margin-left: 5px;
+        }
+        .collapsible.active:after {
+            content: '\25B2';
+        }
+        .collapsible-content {
+            display: none;
+            padding-left: 15px;
+        }
+        .collapsible-content ul {
+            padding: 0;
+        }
+
+        /* Content Area */
+        .content {
+            padding: 20px;
+            flex-grow: 1;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f7dc6f; /* Bright yellow */
+        }
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        .content a {
+            color: #f7dc6f;
+            text-decoration: none;
+        }
+        .content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const collapsibles = document.querySelectorAll(".collapsible");
+            collapsibles.forEach(button => {
+                button.addEventListener("click", () => {
+                    button.classList.toggle("active");
+                    const content = button.nextElementSibling;
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="topbar">
+        <div class="logo">Pyrowh Corporation</div>
+        <div class="nav-links">
+            <a href="pyrowhcorp.vercel.app/index.html">Home</a>
+            <a href="./wiki/index">Wiki</a>
+            <a href="https://github.com/EatMYSHOORTS/Pyrowh.inc-Website">   |     </a>
+      <a href="./login-system/views/index.html">NBTF</a>
+      <a href="https://www.roblox.com/communities/12507282/Pyrowh#!/about">Group</a>
+      <a href="https://civilian-blog.vercel.app/index.html">CivilianBlog</a>
+      <a href="https://discord.gg/nbtf">Discord</a>
+            <a>   </a>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="sidebar">
+            <h2>Wiki Navigation</h2>
+            <button class="collapsible">Game Knowledge / How to Play</button>
+            <div class="collapsible-content">
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#getting-started">GUI</a></li>
+                    <li><a href="#handbook">Locations</a></li>
+                    <li><a href="#rank-descriptions">Wiki Information</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#game-events">fun</a></li>
+                </ul>
+            </div>
+
+            <button class="collapsible">FAQ</button>
+            <div class="collapsible-content">
+                <ul>
+                    <li><a href="#common">Common FAQ</a></li>
+                    <li><a href="#technical">Technical FAQ</a></li>
+                </ul>
+            </div>
+
+            <button class="collapsible">Website</button>
+            <div class="collapsible-content">
+                <ul>
+                    <li><a href="#events">Website Events</a></li>
+                    <li><a href="https://github.com/EatMYSHOORTS/nbtf.com">Github Repository</a></li>
+                    <li><a href="https://cbgames-xyz.vercel.app">Webmaster About</a></li>
+                    <li><a href="#cdn-service">Cloudinary</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Welcome to the Nuclear Blast Testing Facility Wiki</h1>
+            <p>This is the homepage of the wiki, where you can find links to all the important sections of the site. Use the navigation bar on the left to explore different topics.</p>
+
+            <h2> </h2>
+            <h1>Category: Game Knowledge / How to Play</h1>
+
+            <h2 id="overview">Overview</h2>
+            <p>Discover how to get started and learn the basics of our system.</p>
+
+            <h2 id="getting-started">GUI</h2>
+            <p>Follow step-by-step guides to quickly familiarize yourself with the tools and features available.</p>
+
+            <h2 id="handbook">Locations</h2>
+            <p>Find detailed information and rules in the public handbook section.</p>
+
+            <h2 id="rank-descriptions">Wiki Information</h2>
+            <p>Understand the hierarchy and roles in our system with rank descriptions.</p>
+
+            <h2 id="history">History</h2>
+            <p>Learn about the history and milestones of the game.</p>
+
+            <h2> </h2>
+            <h1>Category: Frequently Asked Questions</h1>
+
+            <h2 id="common">Common FAQ</h2>
+            <p>Answers to commonly asked questions are available here to help you.</p>
+
+            <h2 id="technical">Technical FAQ</h2>
+            <p>Technical troubleshooting and specific guidance for advanced issues.</p>
+
+            <h2> </h2>
+            <h1>Extra Information</h1>
+
+            <h2 id="events">Website Events</h2>
+            <p>Check out the latest events and updates.</p>
+
+            <h2 id="game-events">Game Events</h2>
+            <p>Check out the latest events and updates.</p>
+
+            <h2 id="cdn-service">Cloudinary</h2>
+            <p>Cloudinary is the service used for this website's "pictures and videos" assets</p>
+        </div>
+    </div>
+</body>
+</html>
