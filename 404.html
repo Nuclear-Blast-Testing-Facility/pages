@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Forbidden</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff4500, #28b463, #1f618d);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        /* Top Bar */
+        .topbar {
+            background-color: #1f618d; /* Bold blue */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%; /* Ensures it spans the entire viewport width */
+            left: 0; /* Ensures no horizontal displacement */
+            top: 0;
+            z-index: 1000;
+            box-sizing: border-box; /* Ensures padding is included in width */
+        }
+        .topbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f7dc6f; /* Bright yellow */
+        }
+        .topbar .nav-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .topbar .nav-links a:hover {
+            color: #ff4500; /* Vibrant red-orange */
+        }
+        /* 404 Content */
+        .error-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .error-container h1 {
+            font-size: 5rem;
+            color: #f7dc6f; /* Bright yellow */
+            margin: 0 0 20px;
+        }
+        .error-container p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .error-container a {
+            color: #28b463; /* Vibrant green */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .error-container a:hover {
+            color: #1e8449;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="logo">Pyrowh - NBTF</div>
+        <div class="nav-links">
+            <a href="pyrowhcorp.vercel.app/index.html">Home</a>
+            <a href="./wiki/index.html">Wiki</a>
+            <a href="https://github.com/EatMYSHOORTS/Pyrowh.inc-Website">   |     </a>
+      <a href="./login-system/views/index.html">NBTF</a>
+      <a href="https://www.roblox.com/communities/12507282/Pyrowh#!/about">Group</a>
+      <a href="https://civilian-blog.vercel.app/index.html">CivilianBlog</a>
+      <a href="https://discord.gg/nbtf">Discord</a>
+            <a>   </a>
+        </div>
+    </div>
+    <!-- 404 Content -->
+    <div class="error-container">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for can't be found.</p>
+        <p>
+            Return to <a href="https://pyrowhcorp.vercel.app">Home</a> or go to the <a href="./index.html">Wiki</a>.
+        </p>
+    </div>
+</body>
+</html>
