@@ -3,133 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiki - Pyrowh Corporation</title>
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/diehyknwd/image/upload/v1766782366/image_2025-12-27_095244705_waill2.png">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ff4500, #28b463, #1f618d);
-            color: white;
-        }
-
-        /* Top Bar */
-        .topbar {
-            background-color: #1f618d; /* Bold blue */
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        .topbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #f7dc6f; /* Bright yellow */
-        }
-        .topbar .nav-links a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        .topbar .nav-links a:hover {
-            color: #ff4500; /* Vibrant red-orange */
-        }
-
-        /* Main Content */
-        .content-container {
-            display: flex;
-            margin-top: 80px; /* Space for the fixed top bar */
-        }
-
-        /* Sidebar */
-        .sidebar {
-            background-color: #28b463; /* Vibrant green */
-            padding: 20px;
-            width: 250px;
-            box-sizing: border-box;
-            height: 100vh;
-            overflow-y: auto;
-        }
-        .sidebar h2 {
-            font-size: 18px;
-            color: #f7dc6f; /* Bright yellow */
-            margin-bottom: 20px;
-        }
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-        .sidebar ul li {
-            margin-bottom: 15px;
-        }
-        .sidebar ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        .sidebar ul li a:hover {
-            color: #ff4500; /* Vibrant red-orange */
-        }
-        .collapsible {
-            background: none;
-            border: none;
-            color: #f7dc6f;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: left;
-            width: 100%;
-            padding: 10px 0;
-            cursor: pointer;
-            outline: none;
-        }
-        .collapsible:after {
-            content: '\25BC';
-            font-size: 12px;
-            float: right;
-            margin-left: 5px;
-        }
-        .collapsible.active:after {
-            content: '\25B2';
-        }
-        .collapsible-content {
-            display: none;
-            padding-left: 15px;
-        }
-        .collapsible-content ul {
-            padding: 0;
-        }
-
-        /* Content Area */
-        .content {
-            padding: 20px;
-            flex-grow: 1;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-        }
-        .content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #f7dc6f; /* Bright yellow */
-        }
-        .content p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-        .content a {
-            color: #f7dc6f;
-            text-decoration: none;
-        }
-        .content a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta http-equiv="refresh" content="30">
+    <title>Nuclear Blast Testing Facility Wiki</title>
+    <link rel="icon" type="image/png" href="assets/NBTF.png">
+    <link rel="stylesheet" href="/assets/main.css">
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const collapsibles = document.querySelectorAll(".collapsible");
@@ -145,14 +22,12 @@
 </head>
 <body>
     <div class="topbar">
-        <div class="logo">Pyrowh Corporation</div>
+         <img class="logo" src="/assets/NBTF.png" alt="This is official NBTF Logo">
+        <div class="title">Nuclear Blast Testing Facility Wiki</div>
         <div class="nav-links">
-            <a href="pyrowhcorp.vercel.app/index.html">Home</a>
-            <a href="./wiki/index.html">Wiki</a>
-            <a href="https://github.com/EatMYSHOORTS/Pyrowh.inc-Website">   |     </a>
-      <a href="./login-system/views/index.html">NBTF</a>
+            <a href="https://nbtf.ca">NBTF Website</a>
+            <a href="./index.html">Wiki Homepage</a>
       <a href="https://www.roblox.com/communities/12507282/Pyrowh#!/about">Group</a>
-      <a href="https://civilian-blog.vercel.app/index.html">CivilianBlog</a>
       <a href="https://discord.gg/nbtf">Discord</a>
             <a>   </a>
         </div>
@@ -190,7 +65,7 @@
                 </ul>
             </div>
         </div>
-
+<!-- Main Content -->
         <div class="content">
             <h1>Welcome to the Nuclear Blast Testing Facility Wiki</h1>
             <p>This is the homepage of the wiki, where you can find links to all the important sections of the site. Use the navigation bar on the left to explore different topics.</p>
@@ -198,39 +73,40 @@
             <h2> </h2>
             <h1>Category: Game Knowledge / How to Play</h1>
 
-            <h2 id="overview">Overview</h2>
+            <h2 id="overview"><a href="/game/overview.html">Overview</a></h2>
             <p>Discover how to get started and learn the basics of our system.</p>
 
-            <h2 id="gui">GUI</h2>
+            <h2 id="gui"><a href="/game/gui.html">GUI</a></h2>
             <p>Follow step-by-step guides to quickly familiarize yourself with the tools and features available.</p>
 
-            <h2 id="locations">Locations</h2>
+            <h2 id="locations"><a href="/game/locations.html">Locations</a></h2>
             <p>Find detailed information and rules in the public locations section.</p>
 
-            <h2 id="wiki-information">Wiki Information</h2>
+            <h2 id="roles"><a href="/game/roles.html">Roles</a></h2>
             <p>Understand the hierarchy and roles in our system with rank descriptions.</p>
 
-            <h2 id="history">History</h2>
+            <h2 id="history"><a href="/game/history.html">History</a></h2>
             <p>Learn about the history and milestones of the game.</p>
 
             <h2> </h2>
             <h1>Category: Frequently Asked Questions</h1>
 
-            <h2 id="game">Game FAQ</h2>
+            <h2 id="game"><a href="/faq/game.html">Game FAQ</a></h2>
             <p>Answers to commonly asked questions are available here to help you.</p>
 
-            <h2 id="discord">Discord FAQ</h2>
+            <h2 id="discord"><a href="/faq/discord.html">Discord FAQ</a></h2>
             <p>Discord troubleshooting and specific guidance for advanced issues.</p>
 
             <h2> </h2>
             <h1>Extra Information</h1>
 
-            <h2 id="events">Website Events</h2>
+            <h2 id="events"><a href="/extra/events.html">NBTF Events</a></h2>
             <p>Check out the latest events and updates.</p>
 
             <h2 id="cdn-service">Cloudinary</h2>
             <p>Cloudinary is the service used for this website's "pictures and videos" assets</p>
         </div>
     </div>
+    <!-- End of Main Content -->
 </body>
 </html>

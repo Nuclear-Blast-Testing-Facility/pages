@@ -1,0 +1,18 @@
+/wiki-project
+├── extra-info
+│   └── websites.html
+├── faq
+│   ├── game.html (game faq)
+│   └── discord.html (discord faq)
+├── game-info
+│   ├── locations.html
+│   ├── gui.html
+│   ├── roles.html
+│   └── history.html
+├── node_modules (testing server requirements)
+├── .env (testing server)
+├── .gitignore
+├── 404.html (404)
+├── index.html (main page)
+├── main.css (external css for pages)
+└── server.js (testing server)
