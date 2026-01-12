@@ -16,15 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
             <button class="collapsible">FAQ</button>
             <div class="collapsible-content">
                 <ul>
-                    <li><a href="#game">Game FAQ</a></li>
-                    <li><a href="#discord">Discord FAQ</a></li>
+                    <li><a href="/faq/game.html">Game FAQ</a></li>
+                    <li><a href="/faq/discord.html">Discord FAQ</a></li>
+                    <li><a href="/faq/discord-roles.html">Discord Roles</a></li>
                 </ul>
             </div>
             <button class="collapsible">Extra Information</button>
             <div class="collapsible-content">
                 <ul>
-                    <li><a href="#credits">Credits</a></li>
-                    <li><a href="#contact">Contact Information</a></li>
+                    <li><a href="/extra/credits.html">Credits</a></li>
+                    <li><a href="/extra/changelog.html">Changelog</a></li>
+                    <li><a href="/extra/websites.html">Other Websites</a></li>
+                    <li><a href="/extra/contact.html">Contact Information</a></li>
                 </ul>
             </div>
         </div>
