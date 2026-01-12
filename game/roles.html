@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Nuclear Blast Testing Facility Wiki - Game Roles</title>
+    <link rel="icon" type="image/png" href="assets/NBTF.png">
+    <link rel="stylesheet" href="/assets/main.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const collapsibles = document.querySelectorAll(".collapsible");
+            collapsibles.forEach(button => {
+                button.addEventListener("click", () => {
+                    button.classList.toggle("active");
+                    const content = button.nextElementSibling;
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+    </head>
+    <body>
+ <script src="/assets/js/auto-topbar.js"></script>
+    <script src="/assets/js/auto-sidebar.js"></script>
+        <div class="roles-main-content">
+            <h1>Game Roles</h1>
+            <p>Content about the various roles in the Nuclear Blast Testing Facility game will go here.</p>
+        </div>
+        <!--
+        <div class="roles-collapsible-sections">
+            <button class="collapsible">Role 1: Test Subject</button>
+            <div class="collapsible-content">
+                <p>Details about the Test Subject role.</p>
+            </div>
+
+            <button class="collapsible">Role 2: Scientist</button>
+            <div class="collapsible-content">
+                <p>Details about the Scientist role.</p>
+            </div>
+
+            <button class="collapsible">Role 3: Security Officer</button>
+            <div class="collapsible-content">
+                <p>Details about the Security Officer role.</p>
+            </div>
+        </div>
+        -->
+</div>
+</body>
+</html>
