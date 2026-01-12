@@ -51,13 +51,17 @@ body {
             transform: skew(-10deg); 
         }
         .topbar .logo {
+            background-image: url('../assets/NBTF.png');
+            background-size: cover;
             height: 45px;
             width: 45px;
             filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
             transition: transform 0.3s ease;
         }
         .topbar .logo:hover {
-            transform: rotate(5deg) scale(1.1);
+            transform: rotate(15deg) scale(1.1);
+            background-image: url('../assets/NBTF-hover.png');
+            background-size: cover;
         }
 
         /* Main Content */
