@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const topbarHTML = `
     <div class="topbar">
-        <div class="logo"></div>
+        <a href="/" class="logo"></a>
         <div class="title">Nuclear Blast Testing Facility Wiki</div>
         <div class="nav-links">
             <a href="/index.html">Wiki Homepage</a>
